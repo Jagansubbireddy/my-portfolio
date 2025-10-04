@@ -1,15 +1,15 @@
-import React from 'react';
+// src/App.jsx
+import React from "react";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
-import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
-import Navbar from './components/Navbar';
-import Home from './pages/Home';
-import About from './pages/About';
-import Skills from './pages/Skills';
-import Projects from './pages/Projects';
-import Contact from './pages/Contact';
-import Admin from './pages/Admin';
-import Blog from './pages/Blog'; // <-- Import Blog
+import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
+
+import Navbar from "./components/Navbar";
+import Home from "./pages/Home";
+import About from "./pages/About";
+import Contact from "./pages/Contact";
+import Admin from "./pages/Admin";
+import Blog from "./pages/Blog"; // Blog route
 
 function App() {
     return (
@@ -18,17 +18,21 @@ function App() {
                 <Navbar />
                 <main>
                     <Routes>
-                        <Route path="/" element={
-                            <>
-                                <Home />
-                                <About />
-                                <Skills />
-                                <Projects />
-                                <Contact />
-                            </>
-                        } />
+                        {/* Home already renders Skills + Experience + Projects in the right order */}
+                        <Route
+                            path="/"
+                            element={
+                                <>
+                                    <Home />
+                                    <About />
+                                    <Contact />
+                                </>
+                            }
+                        />
+
+                        {/* Standalone routes */}
                         <Route path="/admin" element={<Admin />} />
-                        <Route path="/blog" element={<Blog />} /> {/* <-- Add this line */}
+                        <Route path="/blog" element={<Blog />} />
                     </Routes>
                 </main>
             </Router>

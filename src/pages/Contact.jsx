@@ -1,6 +1,12 @@
+// src/pages/Contact.jsx
 import React from 'react';
 import { motion } from 'framer-motion';
-import { FaGithub, FaLinkedin, FaEnvelope } from 'react-icons/fa';
+import { FaGithub, FaLinkedin, FaEnvelope, FaInstagram } from 'react-icons/fa';
+
+const item = (delay = 0.4) => ({
+    hidden: { opacity: 0, x: -20 },
+    visible: { opacity: 1, x: 0, transition: { duration: 0.45, delay } },
+});
 
 const Contact = () => {
     return (
@@ -32,37 +38,61 @@ const Contact = () => {
                 viewport={{ once: true }}
                 variants={{
                     hidden: {},
-                    visible: { transition: { staggerChildren: 0.2 } }
+                    visible: { transition: { staggerChildren: 0.12 } },
                 }}
             >
-                <motion.li
-                    className="flex items-center gap-3"
-                    initial={{ opacity: 0, x: -20 }}
-                    animate={{ opacity: 1, x: 0 }}
-                    transition={{ duration: 0.4 }}
-                >
+                {/* Email */}
+                <motion.li className="flex items-center gap-3" variants={item(0.1)}>
                     <FaEnvelope className="text-indigo-600 dark:text-indigo-400" />
-                    <a href="mailto:debjit721212@gmail.com" className="hover:underline">debjit721212@gmail.com</a>
+                    <a
+                        href="mailto:debjit721212@gmail.com"
+                        className="hover:underline"
+                        aria-label="Email Debjit"
+                    >
+                        debjit721212@gmail.com
+                    </a>
                 </motion.li>
 
-                <motion.li
-                    className="flex items-center gap-3"
-                    initial={{ opacity: 0, x: -20 }}
-                    animate={{ opacity: 1, x: 0 }}
-                    transition={{ duration: 0.5 }}
-                >
+                {/* LinkedIn */}
+                <motion.li className="flex items-center gap-3" variants={item(0.22)}>
                     <FaLinkedin className="text-indigo-600 dark:text-indigo-400" />
-                    <a href="https://www.linkedin.com/in/debjit-adak-b06416211" className="hover:underline" target="_blank" rel="noreferrer">LinkedIn</a>
+                    <a
+                        href="https://www.linkedin.com/in/debjit-adak-b06416211"
+                        className="hover:underline"
+                        target="_blank"
+                        rel="noreferrer noopener"
+                        aria-label="Debjit on LinkedIn"
+                    >
+                        LinkedIn
+                    </a>
                 </motion.li>
 
-                <motion.li
-                    className="flex items-center gap-3"
-                    initial={{ opacity: 0, x: -20 }}
-                    animate={{ opacity: 1, x: 0 }}
-                    transition={{ duration: 0.6 }}
-                >
+                {/* GitHub */}
+                <motion.li className="flex items-center gap-3" variants={item(0.34)}>
                     <FaGithub className="text-indigo-600 dark:text-indigo-400" />
-                    <a href="https://github.com/debjit721212" className="hover:underline" target="_blank" rel="noreferrer">GitHub</a>
+                    <a
+                        href="https://github.com/debjit721212"
+                        className="hover:underline"
+                        target="_blank"
+                        rel="noreferrer noopener"
+                        aria-label="Debjit on GitHub"
+                    >
+                        GitHub
+                    </a>
+                </motion.li>
+
+                {/* Instagram (professional handle recommended) */}
+                <motion.li className="flex items-center gap-3" variants={item(0.46)}>
+                    <FaInstagram className="text-pink-600 dark:text-pink-400" />
+                    <a
+                        href="https://www.instagram.com/debjit_adak?igsh=ZzltbTN0cGkxdWJv"
+                        className="hover:underline"
+                        target="_blank"
+                        rel="noreferrer noopener"
+                        aria-label="Debjit on Instagram"
+                    >
+                        Instagram
+                    </a>
                 </motion.li>
             </motion.ul>
         </section>
