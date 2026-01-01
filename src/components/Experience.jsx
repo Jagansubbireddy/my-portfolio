@@ -144,7 +144,7 @@ export default function Experience() {
             period: "Dec 2023 — Present",
             current: true,
             bullets: [
-                "aaaaaaaaaaaaaaaaa Data Analysis & Insights: Analyzed large datasets from GMR Hyderabad's retail data to uncover trends, customer behaviors, and sales patterns. Developed scripts to automate data cleaning and preprocessing, improving the efficiency of subsequent analyses and reports for business decision-making.",
+                "Data Analysis & Insights: Analyzed large datasets from GMR Hyderabad's retail data to uncover trends, customer behaviors, and sales patterns. Developed scripts to automate data cleaning and preprocessing, improving the efficiency of subsequent analyses and reports for business decision-making.",
                 "Led Video Analytics for GMR Kamalanga Energy Ltd (GKEL): Managed end-to-end video analytics, including data collection, annotation, and cleaning, optimized YOLOv11 model performance for real-time analytics, handled bug fixes and production support, and facilitated daily client calls to resolve issues and ensure seamless project execution.",
                 "Developed Data-Driven Solutions: Architected a robust VariationManager system in Python to streamline complex camera-to-model mappings across multi-GPU environments. Automated configuration file generation for YOLO v4 and YOLO v8 inference pipelines, focusing on optimizing data flows and improving model performance.",
                 
