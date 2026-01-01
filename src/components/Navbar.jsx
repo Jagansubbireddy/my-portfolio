@@ -19,7 +19,7 @@ const Navbar = () => {
     return (
         <header className="fixed top-0 left-0 w-full bg-white/80 dark:bg-slate-900/80 shadow z-50 backdrop-blur">
             <nav className="max-w-7xl mx-auto px-6 py-4 flex justify-between items-center">
-                <h1 className="text-2xl font-bold tracking-tight">Debjit Adak</h1>
+                <h1 className="text-2xl font-bold tracking-tight">Jagannath S</h1>
                 <div className="hidden md:flex space-x-6 text-sm font-medium">
                     <Link to="/" className="hover:text-indigo-600 transition">Home</Link>
                     <Link to="/" state={{ scrollTo: "about" }} className="hover:text-indigo-600 transition">About</Link>
@@ -29,13 +29,13 @@ const Navbar = () => {
                     <Link to="/blog" className="hover:text-indigo-600 transition">Blog</Link>
                 </div>
                 <div className="flex items-center gap-4 text-indigo-600 dark:text-indigo-400">
-                    <a href="https://github.com/debjit721212" target="_blank" rel="noreferrer">
+                    <a href="https://github.com/Jagansubbireddy" target="_blank" rel="noreferrer">
                         <FaGithub size={18} />
                     </a>
-                    <a href="https://www.linkedin.com/in/debjit-adak-b06416211" target="_blank" rel="noreferrer">
+                    <a href="https://www.linkedin.com/in/s-jagannath-b8131123b/" target="_blank" rel="noreferrer">
                         <FaLinkedin size={18} />
                     </a>
-                    <a href="mailto:debjit721212@gmail.com">
+                    <a href="subbireddyjagan@gmail.com">
                         <FaEnvelope size={18} />
                     </a>
                     <a href="/resume.pdf" download className="ml-2" title="Download Resume">

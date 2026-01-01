@@ -7,7 +7,7 @@ import Avatar from "./Avatar";
  * PortraitPro — advanced, animated portrait wrapper
  *
  * Props:
- * - src: string (image path), default "/debjit.jpeg"
+ * - src: string (image path), default "/jagan.jpeg"
  * - size: number | css string (e.g., 360 | "clamp(240px, 30vw, 480px)")
  * - variant: "neon" | "polaroid" | "blob"  (currently implements "neon" + "polaroid" frame styles)
  * - tilt: boolean (3D hover tilt), default true on desktop
@@ -41,7 +41,7 @@ function clamp(n, lo, hi) {
 }
 
 export default function PortraitPro({
-    src = "/debjit.jpeg",
+    src = "/jagan.jpeg",
     size = "clamp(240px, 30vw, 480px)",
     alt = "Portrait",
     variant = "neon",

@@ -139,64 +139,37 @@ export default function Experience() {
 
     const roles = [
         {
-            title: "Senior Software Engineer (AI/CV)",
+            title: "Software Engineer",
             company: "Kloudspot · Bangalore, India",
-            period: "Mar 2025 — Present",
+            period: "Dec 2023 — Present",
             current: true,
             bullets: [
-                "Built a sync-camera manager: hot-add/remove/modify cameras without restarting containers—zero downtime across the fleet.",
-                "Designed and integrated an action-recognition pipeline with DeepStream for reliable, real-time events.",
-                "Enabled per-camera tracker configs while batching streams together via DeepStream sub-batch for stability and utilization.",
-                "Benchmarked end-to-end use cases with memory-leak detection and component-level profiling to harden reliability.",
+                "Data Analysis & Insights: Analyzed large datasets from GMR Hyderabad's retail data to uncover trends, customer behaviors, and sales patterns. Developed scripts to automate data cleaning and preprocessing, improving the efficiency of subsequent analyses and reports for business decision-making.",
+                "Led Video Analytics for GMR Kamalanga Energy Ltd (GKEL): Managed end-to-end video analytics, including data collection, annotation, and cleaning, optimized YOLOv11 model performance for real-time analytics, handled bug fixes and production support, and facilitated daily client calls to resolve issues and ensure seamless project execution.",
+                "Developed Data-Driven Solutions: Architected a robust VariationManager system in Python to streamline complex camera-to-model mappings across multi-GPU environments. Automated configuration file generation for YOLO v4 and YOLO v8 inference pipelines, focusing on optimizing data flows and improving model performance.",
+                
+                "Integrated Data Management Systems: Developed dynamic configuration file creation and loading for NVIDIA DeepStream, enhancing data processing capabilities and enabling more efficient workflows for real-time analytics.",
+                
+                "Data Optimization & Testing: Conducted extensive end-to-end testing for the smart record feature integration, analyzing data flows and optimizing performance for large-scale deployments.",
+                
+                "Model Analysis & Optimization: Generated YOLOv4 and YOLOv8 engine files, performed INT8 conversion, and analyzed model accuracy using performance metrics, ensuring that data models were tuned for high accuracy in real-world applications.",
+                
+                "Data Pipeline Development: Integrated SGIE to PGIE mapping in NVIDIA DeepStream, enabling efficient metadata flow and supporting better multi-model processing. This required in-depth analysis and testing of data pipelines to ensure accuracy and consistency across multiple models.",
+                
+                "Data Collection & Synthetic Data Generation: Generated over 2 million synthetic license plates for Oman and Kuwait as part of the GCC-ANPR project. Integrated and tested ANPR models to optimize license plate recognition accuracy through data analysis and model evaluation."
             ],
+
             tech: [
-                "DeepStream",
-                "TensorRT",
-                "GStreamer",
-                "Action Recognition",
-                "Tracking",
                 "Python",
+                "SQL",
+                "Power BI",
+                "Deepstream",
                 "Docker",
-                "Kubernetes",
+                "NumPy",
+                "Pandas",
             ],
             links: [],
-        },
-        {
-            title: "Software Engineer (AI/CV)",
-            company: "Kloudspot · Bangalore, India",
-            period: "Dec 2022 — Feb 2025",
-            bullets: [
-                "Streamlined analytics & delivery with end-to-end DeepStream pipelines for large camera fleets.",
-                "Built crowd monitoring, vehicle tracking, and parking workflows; tuned per-camera trackers for stability across diverse scenes.",
-                "Shipped classification with TensorRT and multiple YOLO families; integrated SAM & Grounding DINO for dynamic region masking.",
-                "Designed an MCT service with global ID continuity across cameras; applied CLIP for semantic retrieval.",
-            ],
-            tech: ["DeepStream", "TensorRT", "YOLO", "SAM", "Grounding DINO", "CLIP", "Python", "Docker"],
-            links: [],
-        },
-        {
-            title: "Freelance CV Engineer",
-            company: "INDORAMA · TATA STEEL · NKDA (Kolkata, India)",
-            period: "Sep 2022 — Dec 2022",
-            bullets: [
-                "Implemented conveyor-belt monitoring & predictive maintenance to reduce unplanned downtime.",
-                "Built PPE-compliance detection with real-time alerting to improve on-site safety adherence.",
-                "Deployed plastic-bag detection to support sustainability initiatives at point of use.",
-            ],
-            tech: ["Computer Vision", "Detection", "Edge Deployment", "Python"],
-            links: [],
-        },
-        {
-            title: "Software Engineer (CV) · Client: BYJU’S",
-            company: "AllGoVision · Bangalore, India",
-            period: "Mar 2022 — Sep 2022",
-            bullets: [
-                "Developed engagement models using head-pose & gaze to analyze student attention in real time.",
-                "Optimized PyTorch models via ONNX→TensorRT for faster inference with minimal accuracy loss.",
-            ],
-            tech: ["PyTorch", "ONNX", "TensorRT", "Real-time CV"],
-            links: [],
-        },
+        }
     ];
 
     const [showAll] = useState(true); // keep full timeline visible; toggleable if you want

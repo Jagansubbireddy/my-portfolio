@@ -45,11 +45,11 @@ const Contact = () => {
                 <motion.li className="flex items-center gap-3" variants={item(0.1)}>
                     <FaEnvelope className="text-indigo-600 dark:text-indigo-400" />
                     <a
-                        href="mailto:debjit721212@gmail.com"
+                        href="subbireddyjagan@gmail.com"
                         className="hover:underline"
-                        aria-label="Email Debjit"
+                        aria-label="Email Jagan"
                     >
-                        debjit721212@gmail.com
+                        subbireddyjagan@gmail.com
                     </a>
                 </motion.li>
 
@@ -57,11 +57,11 @@ const Contact = () => {
                 <motion.li className="flex items-center gap-3" variants={item(0.22)}>
                     <FaLinkedin className="text-indigo-600 dark:text-indigo-400" />
                     <a
-                        href="https://www.linkedin.com/in/debjit-adak-b06416211"
+                        href="https://www.linkedin.com/in/s-jagannath-b8131123b/"
                         className="hover:underline"
                         target="_blank"
                         rel="noreferrer noopener"
-                        aria-label="Debjit on LinkedIn"
+                        aria-label="Jagan on LinkedIn"
                     >
                         LinkedIn
                     </a>
@@ -71,11 +71,11 @@ const Contact = () => {
                 <motion.li className="flex items-center gap-3" variants={item(0.34)}>
                     <FaGithub className="text-indigo-600 dark:text-indigo-400" />
                     <a
-                        href="https://github.com/debjit721212"
+                        href="https://github.com/Jagansubbireddy"
                         className="hover:underline"
                         target="_blank"
                         rel="noreferrer noopener"
-                        aria-label="Debjit on GitHub"
+                        aria-label="Jagan on GitHub"
                     >
                         GitHub
                     </a>
@@ -85,11 +85,11 @@ const Contact = () => {
                 <motion.li className="flex items-center gap-3" variants={item(0.46)}>
                     <FaInstagram className="text-pink-600 dark:text-pink-400" />
                     <a
-                        href="https://www.instagram.com/debjit_adak?igsh=ZzltbTN0cGkxdWJv"
+                        href="https://www.instagram.com/jagan_roy_18?igsh=NHlmbHgzbm01Y3Z1"
                         className="hover:underline"
                         target="_blank"
                         rel="noreferrer noopener"
-                        aria-label="Debjit on Instagram"
+                        aria-label="Jagan on Instagram"
                     >
                         Instagram
                     </a>

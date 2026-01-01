@@ -11,23 +11,23 @@ const About = () => {
                     <h3 className="text-3xl font-bold mb-4">About Me</h3>
 
                     <p className="text-lg leading-relaxed text-gray-700 dark:text-gray-200">
-                        I’m an AI/Computer Vision engineer who builds real-time systems that operate reliably in the wild.
-                        My recent focus breaks down roughly as <span className="font-medium">50% computer vision</span>,
-                        <span className="font-medium"> 30% generative AI</span>, and
-                        <span className="font-medium"> 20% multimodal (vision-language)</span>.
-                        I’ve integrated <span className="font-medium">action recognition</span> into production pipelines and tuned
-                        <span className="font-medium"> per-camera trackers</span> across diverse deployments to balance accuracy, speed, and stability.
-                        I also completed a <span className="font-medium">RAG-based LoRA</span> project powered by multimodal understanding and continue
-                        to explore GenAI to improve search, retrieval, and user experience.
+                        I’m an Software Engineer with hands-on experience building real-time systems that operate reliably in dynamic environments. 
+                        
                     </p>
 
                     <p className="text-lg leading-relaxed text-gray-700 dark:text-gray-200 mt-5">
-                        I’m currently pursuing an <span className="font-medium">MS in Data Science &amp; AI</span> at BITS Pilani.
-                        Beyond the tech, I care about clean design, measurable reliability, and shipping systems that make sense to the people who use them.
+                        While my background is in AI and computer vision, I’m now expanding my expertise into <span className="font-medium">Data Analytics</span>. 
+                        I’ve developed strong skills in <span className="font-medium">data cleaning, exploratory data analysis (EDA),</span> and <span className="font-medium">data visualization </span> 
+                        using tools like Python, Pandas, and Matplotlib. I’m passionate about transforming complex datasets into actionable insights that drive business decisions.
                     </p>
 
                     <p className="text-lg leading-relaxed text-gray-700 dark:text-gray-200 mt-5">
-                        <span className="font-semibold">Open to</span> roles and meaningful collaborations.
+                        I’m focused on applying data-driven decision-making to optimize business processes and improve user experience. 
+                        My approach is rooted in a mix of technical proficiency, problem-solving, and a keen understanding of the value of clean, actionable data.
+                    </p>
+
+                    <p className="text-lg leading-relaxed text-gray-700 dark:text-gray-200 mt-5">
+                        <span className="font-semibold">Open to</span> roles and meaningful collaborations in Data Analytics, Data Science, and business intelligence.
                     </p>
 
                     {/* Open Source & Community Section (DeepStream only) */}
@@ -39,7 +39,7 @@ const About = () => {
                         <ul className="list-disc ml-6 space-y-2">
                             <li>
                                 <a
-                                    href="https://forums.developer.nvidia.com/u/debjit.adak/summary"
+                                    href="https://forums.developer.nvidia.com/u/s.jagannath/summary"
                                     target="_blank"
                                     rel="noreferrer"
                                     className="text-indigo-600 hover:underline"
@@ -54,7 +54,7 @@ const About = () => {
                 {/* Right: Advanced animated portrait (sticky, parallax, tilt, shine, orbiters) */}
                 <div className="flex justify-center md:justify-end">
                     <PortraitPro
-                        src="/debjit.jpeg"
+                        src="/jagan.jpeg"
                         size="clamp(260px, 32vw, 480px)"
                         intensity="high"
                         orbiters={4}

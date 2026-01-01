@@ -4,168 +4,79 @@ import { motion } from "framer-motion";
 
 // Font Awesome (stable)
 import {
-    FaPython, FaDocker, FaAws, FaLinux, FaDatabase, FaCubes,
-    FaGithub, FaBitbucket, FaGlobe, FaChartBar
+    FaPython, FaDocker, FaLinux, FaDatabase, FaCubes,
+    FaGithub, FaBitbucket, FaChartBar, FaMicrosoft
 } from "react-icons/fa";
 
-// Simple Icons (only ones your build is likely to have)
+// Simple Icons (only the ones you need)
 import {
-    SiPytorch,
-    SiTensorflow,
     SiOpencv,
-    SiFastapi,
-    SiRedis,
-    SiKubernetes,
-    // ❌ SiPowerbi removed (not available in your build)
-    SiScikitlearn,
     SiPandas,
     SiNumpy,
 } from "react-icons/si";
 
-import { TbBrandOpenai } from "react-icons/tb";
-import { GiArtificialIntelligence } from "react-icons/gi";
+import { SiFlask } from "react-icons/si";
 
-/* Brand colors */
+// Brand colors for your stack
 const BRAND = {
     Python: "#3776AB",
-    "scikit-learn": "#F7931E",
-    Pandas: "#150458",
-    NumPy: "#013243",
-    Seaborn: "#4C72B0",
-    Matplotlib: "#11557C",
-    "Power BI": "#F2C811",
-
-    PyTorch: "#EE4C2C",
-    TensorFlow: "#FF6F00",
     OpenCV: "#5C3EE8",
     DeepStream: "#76B900",
-    TensorRT: "#76B900",
-
-    LangChain: "#10A37F",
-    LangGraph: "#0EA5E9",
-    RAG: "#10A37F",
-    LoRA: "#10A37F",
-    CLIP: "#10A37F",
-    "Agentic AI": "#7C3AED",
-    "NVIDIA NeMo": "#76B900",
-
+    Pandas: "#150458",
+    NumPy: "#013243",
+    Matplotlib: "#11557C",
+    "Power BI": "#F2C811",
     Docker: "#2496ED",
-    Kubernetes: "#326CE5",
     Linux: "#FCC624",
-    AWS: "#FF9900",
-    FastAPI: "#009688",
-
-    Milvus: "#00A99D",
-    Qdrant: "#6E56CF",
-    ChromaDB: "#A78BFA",
-    FAISS: "#1877F2",
-    Redis: "#DC382D",
+    Flask: "#000000",  // Flask color (black logo)
     SQL: "#2563EB",
-
+    "Microsoft Excel": "#217346", // Added color for Excel
     GitHub: "#24292E",
     Bitbucket: "#0052CC",
-    Crawl4AI: "#0EA5E9",
 };
 
 /* Safe icon map */
 const ICONS = {
-    // Data & Analytics
     Python: FaPython,
-    "scikit-learn": SiScikitlearn,
-    Pandas: SiPandas,
-    NumPy: SiNumpy,
-    Seaborn: FaChartBar,     // fallback icon
-    Matplotlib: FaChartBar,  // fallback icon
-    "Power BI": FaChartBar,  // ✅ fallback instead of missing SiPowerbi
-
-    // CV / Frameworks
-    PyTorch: SiPytorch,
-    TensorFlow: SiTensorflow,
     OpenCV: SiOpencv,
     DeepStream: FaCubes,
-    TensorRT: FaCubes,
-
-    // LLMs & Agents
-    LangChain: TbBrandOpenai,
-    LangGraph: TbBrandOpenai,
-    RAG: TbBrandOpenai,
-    LoRA: TbBrandOpenai,
-    CLIP: TbBrandOpenai,
-    "Agentic AI": GiArtificialIntelligence,
-    "NVIDIA NeMo": FaCubes,
-
-    // Infra & DevOps
+    Pandas: SiPandas,
+    NumPy: SiNumpy,
+    Matplotlib: FaChartBar,
+    "Power BI": FaChartBar,  // Fallback for Power BI
     Docker: FaDocker,
-    Kubernetes: SiKubernetes,
     Linux: FaLinux,
-    AWS: FaAws,
-    FastAPI: SiFastapi,
-
-    // Vector / DB
-    Milvus: FaDatabase,
-    Qdrant: FaDatabase,
-    ChromaDB: FaDatabase,
-    FAISS: FaDatabase,
-    Redis: SiRedis,
+    Flask: SiFlask,
     SQL: FaDatabase,
-
-    // Code & Collaboration / Crawling
+    "Microsoft Excel": FaMicrosoft,  // Use FontAwesome Microsoft icon
     GitHub: FaGithub,
     Bitbucket: FaBitbucket,
-    Crawl4AI: FaGlobe,
 };
 
 /* Doc links */
 const LINKS = {
     Python: "https://www.python.org/doc/",
-    "scikit-learn": "https://scikit-learn.org/stable/",
-    Pandas: "https://pandas.pydata.org/docs/",
-    NumPy: "https://numpy.org/doc/",
-    Seaborn: "https://seaborn.pydata.org/",
-    Matplotlib: "https://matplotlib.org/stable/",
-    "Power BI": "https://learn.microsoft.com/power-bi/",
-
-    PyTorch: "https://pytorch.org/docs/stable/index.html",
-    TensorFlow: "https://www.tensorflow.org/learn",
     OpenCV: "https://docs.opencv.org/",
     DeepStream: "https://docs.nvidia.com/metropolis/deepstream/dev-guide/index.html",
-    TensorRT: "https://docs.nvidia.com/deeplearning/tensorrt/developer-guide/index.html",
-
-    LangChain: "https://python.langchain.com/docs/",
-    LangGraph: "https://langchain-ai.github.io/langgraph/",
-    RAG: "https://huggingface.co/docs/transformers/en/model_doc/rag",
-    LoRA: "https://huggingface.co/docs/peft/en/package_reference/lora",
-    CLIP: "https://github.com/openai/CLIP",
-    "Agentic AI": "https://blogs.nvidia.com/blog/what-is-agentic-ai/",
-    "NVIDIA NeMo": "https://docs.nvidia.com/nemo-framework/index.html",
-
+    Pandas: "https://pandas.pydata.org/docs/",
+    NumPy: "https://numpy.org/doc/",
+    Matplotlib: "https://matplotlib.org/stable/",
+    "Power BI": "https://learn.microsoft.com/power-bi/",
     Docker: "https://docs.docker.com/",
-    Kubernetes: "https://kubernetes.io/docs/home/",
     Linux: "https://www.kernel.org/doc/html/latest/",
-    AWS: "https://docs.aws.amazon.com/",
-    FastAPI: "https://fastapi.tiangolo.com/",
-
-    Milvus: "https://milvus.io/",
-    Qdrant: "https://qdrant.tech/documentation/",
-    ChromaDB: "https://docs.trychroma.com/",
-    FAISS: "https://faiss.ai/",
-    Redis: "https://redis.io/docs/",
-    SQL: "https://www.postgresql.org/docs/",
-
+    Flask: "https://flask.palletsprojects.com/en/2.0.x/",
+    SQL: "https://learn.microsoft.com/en-us/sql/?view=sql-server-ver15",  // MS SQL Server link
+    "Microsoft Excel": "https://support.microsoft.com/en-us/excel", // Added link for Microsoft Excel
     GitHub: "https://docs.github.com/",
     Bitbucket: "https://support.atlassian.com/bitbucket-cloud/",
-    Crawl4AI: "https://docs.crawl4ai.com/",
 };
 
 /* Groups */
 const GROUPS = [
-    { title: "Computer Vision", items: ["OpenCV", "PyTorch", "TensorFlow", "DeepStream", "TensorRT"] },
-    { title: "LLMs & Agents", items: ["LangChain", "LangGraph", "RAG", "LoRA", "CLIP", "Agentic AI", "NVIDIA NeMo"] },
-    { title: "Data & Analytics", items: ["Python", "Pandas", "NumPy", "scikit-learn", "Seaborn", "Matplotlib", "Power BI"] },
-    { title: "Vector Databases & Search", items: ["Milvus", "Qdrant", "ChromaDB", "FAISS", "Redis", "SQL"] },
-    { title: "Infra & DevOps", items: ["Docker", "Kubernetes", "Linux", "AWS", "FastAPI"] },
+    { title: "Data & Analytics", items: ["Python", "SQL", "Power BI", "Microsoft Excel", "NumPy", "Pandas", "Matplotlib",] },
+    { title: "Computer Vision", items: ["OpenCV", "DeepStream"] },
+    { title: "Infra & DevOps", items: ["Docker", "Linux", "Flask"] },
     { title: "Code & Collaboration", items: ["GitHub", "Bitbucket"] },
-    { title: "Data Ingestion & Crawling", items: ["Crawl4AI"] },
 ];
 
 function hexToRgba(hex, alpha = 0.28) {

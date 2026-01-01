@@ -170,9 +170,9 @@ const Home = () => {
                 <div className="relative z-10 w-full">
                     <div className="mx-auto max-w-4xl px-4 md:px-8">
                         <HeroInfoCard
-                            name="Debjit"
-                            headline="Building real-time AI for the physical world"
-                            tagline="AI & Computer Vision Engineer focused on real-time vision & scalable systems."
+                            name="Jagan"
+                            headline="Software Engineer (AI/CV Engineer) | Data Analyst"
+                            tagline="Experienced Software Engineer with a focus on AI and Computer Vision engineering, skilled in data analysis. Outside of my core role, I apply my expertise to data analytics, using data to drive business decisions and improve processes."
                         />
                     </div>
                 </div>

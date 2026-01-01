@@ -1,10 +1,10 @@
 // src/data/projects.js
 const projects = [
     {
-        title: "Semantic Image + Video Search + Multimodal RAG Agent",
+        title: "Retail Orders Analysis Using Python and SQL",
         description:
-            "Production CLIP+BLIP system for image/video search with captioning, time-aware FAISS retrieval, and LangChain RAG agents.",
-        tech: ["CLIP", "BLIP", "Streamlit", "FastAPI", "LangChain", "Docker"],
+            "Used the Kaggle API to download the retail orders dataset, performed data preprocessing with Python (handling missing values, renaming columns, deriving key metrics, and converting date fields), and executed SQL queries to uncover top-performing products, regional sales, growth trends, and subcategory profits for business insights.",
+        tech: ["Python", "SQL", "NumPy", "Pandas", "matplotlib"],
         image: "/project1.png",
         link:
             "https://github.com/debjit721212/semantic-image-search/tree/feature/multimodal-lora-rag-agent",
@@ -12,7 +12,7 @@ const projects = [
     {
         title: "MCT – Multi-Camera Tracking System",
         description:
-            "Real-time multi-camera tracking with global ID assignment using DeepStream; scalable zone pipelines backed by Qdrant and Redis.",
+            "Reae zone pipelines backed by Qdrant and Redis.",
         tech: ["DeepStream", "Qdrant", "Redis", "FastAPI", "Docker"],
         image: "/project2.png",
         link: "https://github.com/debjit721212/MCT",

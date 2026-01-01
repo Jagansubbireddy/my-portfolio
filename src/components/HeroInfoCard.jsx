@@ -1,4 +1,6 @@
 // src/components/HeroInfoCard.jsx
+console.log("🔥 HeroInfoCard LOADED v1");
+
 import React, { useEffect, useState } from "react";
 import { motion } from "framer-motion";
 

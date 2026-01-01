@@ -11,7 +11,7 @@ import { motion } from "framer-motion";
  * - `hoverLift`: scale on hover (default 1.03)
  */
 export default function Avatar({
-    src = "/debjit.jpeg",
+    src = "/jagan.jpeg",
     size = "clamp(220px, 28vw, 380px)",
     alt = "Debjit",
     kenBurns = true,
